@@ -1,7 +1,6 @@
 * {
   margin: 0;
-  width: 100%;
-  height: 100%;}
+  width: 100%;}
   
 img[src*="large"], img[src*="medium"], img[src*="small"] {
 	display: none;
