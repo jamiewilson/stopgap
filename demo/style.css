@@ -1,7 +1,7 @@
 * {
   margin: 0;
   width: 100%;
-  height: auto;}
+  height: inherit;}
   
 img[src*="large"], img[src*="medium"], img[src*="small"] {
 	display: none;}
