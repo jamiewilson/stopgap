@@ -1,10 +1,11 @@
 * {
   margin: 0;
   width: 100%;
-  height: inherit;}
+  height: 100%;}
   
 img[src*="large"], img[src*="medium"], img[src*="small"] {
-	display: none;}
+	display: none;
+	height: auto;}
 	
 div {
   position: fixed;
