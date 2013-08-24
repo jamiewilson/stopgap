@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Stopgap - Responsive-like Mockups</title>
+  
+  <meta charset="utf-8">
+  <meta name="description" content="Quick, responsive-like mockups in the browser. Stopgap is minimalist solution to the complex problem of presenting design mockups of a responsive web project. Users upload 3 sets of static images that represent small, medium and large screen iterations. It's meant to help designers--and their clients--transition the design approval process into the browser.">
+  <meta name="keywords" content="mockup, mockups, mocks, responsive, rwd, web design, designers, in browser, proofs, approval, jamie wilson, jamie wilson dallas, jamiewilson, jmwlsn, @jmwlsn, jamiewilson.co, jamie wilson switch, designer, design, switch, creative, dallas, graphic">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  <link rel='stylesheet' href='assets/css/normalize.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+  
+  <link href="assets/images/favicon.png" rel="shortcut icon">
+  
+</head>
+
+  <body>
+    <div class="headline">
+      <h1>Stopgap.io</h1>
+      <h2>Quick, responsive-like mockups in the browser.</h2>
+      <!-- Begin MailChimp Signup Form -->
+          <form action="http://stopgap.us7.list-manage.com/subscribe/post?u=ce68e25549856293fcf88e123&amp;id=7069425de4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="email" placeholder="notifyme@launch.yo" name="EMAIL" class="required email" id="mce-EMAIL">
+            <input type="submit" value="BAM" name="subscribe" id="mc-embedded-subscribe">
+          </form>
+      <!--End mc_embed_signup-->
+    </div>
+    
+    
+    <a href="/demo" class="view">View the Demo</a>
+    <a href="/demo">
+      <div class="screen">
+        <span class="rollover">
+          <span class="text">View</span>
+          <span class="text">The</span>
+          <span class="text">Demo</span>
+        </span>
+      </div>
+    </a>
+    
+  </body>
+
+</html>
