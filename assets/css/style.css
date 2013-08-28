@@ -31,7 +31,8 @@ body {
 
 .headline {
   margin: 6rem 0 0  10%;
-  width: 18.75rem; }
+  width: 18.75rem;
+  height: 100%; }
 
 h1 {
   color: #2E464E;
@@ -47,6 +48,15 @@ h2 {
 form {
   display: inline;
   font-size: 0; }
+
+.more {
+  color: #CE3B1A;
+  font: 100 1.2rem/.9 "VerbCondExtraLight";
+  border-bottom: 1px solid #CE3B1A;
+  text-decoration: none;
+  position: absolute;
+  left: 10%;
+  bottom: 5em; }
 
 input[type="email"], input[type="submit"] {
   appearance: none;
