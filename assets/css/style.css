@@ -49,14 +49,14 @@ form {
   display: inline;
   font-size: 0; }
 
-.more {
+.contact {
   color: #CE3B1A;
   font: 100 1.2rem/.9 "VerbCondExtraLight";
   border-bottom: 1px solid #CE3B1A;
   text-decoration: none;
   position: absolute;
   left: 10%;
-  bottom: 5em; }
+  bottom: 8%; }
 
 input[type="email"], input[type="submit"] {
   appearance: none;
