@@ -1,0 +1,69 @@
+/*-----------------------------
+		Fonts
+-----------------------------*/
+@font-face {
+  font-family: 'VerbCondExtraLight';
+  src: url(../fonts/VerbCondExtraLight.eot);
+  src: url(../fonts/VerbCondExtraLight.eot?#iefix) format("embedded-opentype"), url(../fonts/VerbCondExtraLight.woff) format("woff"), url(../fonts/VerbCondExtraLight.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'VerbBlack';
+  src: url(../fonts/VerbBlack.eot);
+  src: url(../fonts/VerbBlack.eot?#iefix) format("embedded-opentype"), url(../fonts/VerbBlack.woff) format("woff"), url(../fonts/VerbBlack.ttf) format("truetype"); }
+
+/*-----------------------------
+		Base Styles
+-----------------------------*/
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+html {
+  background: #F18260;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;}
+
+body {
+  height: 100%;
+  width: 100%;
+	display: table;}
+
+div {
+  vertical-align: middle;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+	display: table-cell;}
+
+h1 {
+  color: white;
+  font: 800 2.5rem "VerbBlack";
+  margin-bottom: .5rem;
+  -webkit-font-smoothing: antialiased;}
+
+h2 {
+  color: #2E464E;
+  font: 100 1.5rem "VerbCondExtraLight";
+  margin-bottom: 3rem; }
+
+
+/*-----------------------------
+  Media Query - Below 480px
+-----------------------------*/
+@media only screen and (max-width: 480px) {
+
+  h2 {
+    font-size: 1.2rem;}
+}
+
+/*-----------------------------
+  Extras
+-----------------------------*/
+::selection {
+  background: transparent;
+  color: #CE3B1A; }
+
+::-moz-selection {
+  background: transparent;
+  color: #CE3B1A; }
