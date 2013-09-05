@@ -4,50 +4,50 @@
 @font-face {
   font-family: 'VerbCondExtraLight';
   src: url(../fonts/VerbCondExtraLight.eot);
-  src: url(../fonts/VerbCondExtraLight.eot?#iefix) format("embedded-opentype"), url(../fonts/VerbCondExtraLight.woff) format("woff"), url(../fonts/VerbCondExtraLight.ttf) format("truetype"); }
+  src: url(../fonts/VerbCondExtraLight.eot?#iefix) format("embedded-opentype"), url(../fonts/VerbCondExtraLight.woff) format("woff"), url(../fonts/VerbCondExtraLight.ttf) format("truetype");}
 
 @font-face {
   font-family: 'VerbBlack';
   src: url(../fonts/VerbBlack.eot);
-  src: url(../fonts/VerbBlack.eot?#iefix) format("embedded-opentype"), url(../fonts/VerbBlack.woff) format("woff"), url(../fonts/VerbBlack.ttf) format("truetype"); }
+  src: url(../fonts/VerbBlack.eot?#iefix) format("embedded-opentype"), url(../fonts/VerbBlack.woff) format("woff"), url(../fonts/VerbBlack.ttf) format("truetype");}
 
 /*-----------------------------
 		Base Styles
 -----------------------------*/
 * {
   box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-box-sizing: border-box;}
 
 html {
   background: #F18260;
   font-size: 100%;
   height: 100%;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;}
 
 body {
   color: white;
-  text-align: left; }
+  text-align: left;}
 
 .headline {
   margin: 6rem 0 0  10%;
   width: 18.75rem;
-  height: 100%; }
+  height: 100%;}
 
 h1 {
   color: #2E464E;
   font: 800 1.875rem "VerbBlack";
   letter-spacing: .1rem;
   margin-bottom: .5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;}
 
 h2 {
   font: 100 1.7rem "VerbCondExtraLight";
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;}
 
 form {
   display: inline;
-  font-size: 0; }
+  font-size: 0;}
 
 .contact {
   color: #CE3B1A;
@@ -56,7 +56,7 @@ form {
   text-decoration: none;
   position: absolute;
   left: 10%;
-  bottom: 8%; }
+  bottom: 8%;}
 
 input[type="email"], input[type="submit"] {
   appearance: none;
@@ -69,16 +69,16 @@ input[type="email"], input[type="submit"] {
   outline: none;
   padding: 1.3rem 1.2rem 1.1rem 1.2rem;
   transition: all 500ms ease;
-  -webkit-transition: all 500ms ease; }
+  -webkit-transition: all 500ms ease;}
 
 input[type="email"] {
   color: #2E464E;
   font: 100 1rem "VerbCondExtraLight";
-  width: 70%; }
+  width: 70%;}
 
 input[type="email"]:focus {
   box-shadow: 0 0 0 6px #EF5A37 inset;
-  outline: none; }
+  outline: none;}
 
 input[type="submit"] {
   background: #EF5A37;
@@ -89,15 +89,15 @@ input[type="submit"] {
   letter-spacing: .1rem;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
-  width: 30%; }
+  width: 30%;}
 
 input[type="submit"]:hover {
-  background: #CE3B1A; }
+  background: #CE3B1A;}
 
 input[type="submit"]:active {
   background: #EF5A37;
   transition: none;
-  -webkit-transition: none; }
+  -webkit-transition: none;}
 
 .screen {
   background: url(../images/screen.svg) no-repeat top center;
@@ -110,7 +110,7 @@ input[type="submit"]:active {
   top: 6rem;
   transition: left 500ms ease;
   width: 56.25rem;
-  -webkit-transition: left 500ms ease; }
+  -webkit-transition: left 500ms ease;}
 
 .rollover {
   color: white;
@@ -125,47 +125,50 @@ input[type="submit"]:active {
   top: 3.75rem;
   transition: opacity 500ms ease;
   width: 100%;
-  -webkit-transition: opacity 500ms ease; }
+  -webkit-transition: opacity 500ms ease;}
 
 .text {
   border-bottom: 5px solid white;
   display: block;
-  width: 12.5rem; }
+  width: 12.5rem;}
 
 span:hover {
-  opacity: .9; }
+  opacity: .9;}
 
-.view {
+.link {
   color: #CE3B1A;
   display: none;
   font: 100 1rem/1 "VerbCondExtraLight";
   margin-bottom: 8%;
-  margin-right: 15px;
-  text-decoration: underline; }
+  text-decoration: underline;}
+  
+.left {
+  margin-right: 15px;}
 
 /*-----------------------------
   Media Query - Below 1300px
 -----------------------------*/
 @media only screen and (max-width: 1300px) {
   .screen {
-    left: 45%; }
+    left: 45%;}
 
   .headline {
-    margin-left: 8%; } }
+    margin-left: 8%;}}
+    
 /*-----------------------------
   Media Query - Below 900px
 -----------------------------*/
 @media only screen and (max-width: 900px) {
   body {
-    text-align: center; }
+    text-align: center;}
 
   .headline {
     margin: 10% auto;
-    width: 90%; }
+    width: 90%;}
 
   h2 {
     font-size: 1.6rem;
-    margin-bottom: 10%; }
+    margin-bottom: 10%;}
 
   .screen {
     -webkit-transition: none;
@@ -174,20 +177,24 @@ span:hover {
     right: 5%;
     top: auto;
     transition: none;
-    width: 90%; }
+    width: 90%;}
 
   .rollover {
-    display: none; }
+    display: none;}
 
-  .view {
-    display: inline-block; } }
+  .link {
+    display: inline-block;}
+    
+  .contact {
+    display: none;}}
+    
 /*-----------------------------
   Extras
 -----------------------------*/
 ::selection {
   background: transparent;
-  color: #CE3B1A; }
+  color: #CE3B1A;}
 
 ::-moz-selection {
   background: transparent;
-  color: #CE3B1A; }
+  color: #CE3B1A;}
