@@ -45,16 +45,12 @@ h1 {
 h2 {
   color: #2E464E;
   font: 100 1.5rem "VerbCondExtraLight";
-  margin-bottom: 3rem; }
+  margin-bottom: 5rem; }
   
 a {
   font: 100 1rem "VerbCondExtraLight";
   color: #CE3B1A;
   text-decoration: none;
-  position: absolute;
-  width: 12em;
-  margin-left: -6em;
-  bottom: 15%;
 }
 
 
@@ -64,11 +60,10 @@ a {
 @media only screen and (max-width: 480px) {
 
 h1 {
-  margin-top: -25%;
   font-size: 3rem;}
 
 h2 {
-  margin: 0 auto;
+  margin: 0 auto 5em auto;
   max-width: 90%;
   font-size: 1.2rem;}
 }
